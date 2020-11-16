@@ -1,0 +1,14 @@
+<h1>
+  Welcome to Home!
+</h1>
+
+<div>
+   <div *ngFor="let item of personaldetails; let i = index">
+     <div class="divlayout">  {{item.name}}  </div>
+   </div >
+   <div (mouseover)="TextHover=true" (mouseout)="TextHover=false">
+  <span *ngIf="!TextHover">Hide</span>
+  <span *ngIf="TextHover">Show</span>
+   </div>
+</div>
+

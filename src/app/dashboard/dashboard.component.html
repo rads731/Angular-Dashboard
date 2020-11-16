@@ -1,0 +1,20 @@
+<h1>Welcome to the Dashboard</h1>
+
+<table>
+   <tr>
+   &nbsp;&nbsp;
+   <th>Id</th> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+   <th>Name</th> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+   <th>Email</th>  &nbsp;&nbsp;&nbsp;&nbsp;
+   <th>Username</th>
+   </tr>
+   <tr *ngFor="let user of users">
+     <td><input type="checkbox" id=user_id value=`user.id` /></td>
+     <td>{{user.id}}</td>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+     <td>{{user.name}}</td>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+     <td>{{user.email}}</td>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <td>{{user.username}}</td>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <td><button (change)="onSubmit()">Delete</button></td>    
+   </tr>
+</table>
+
